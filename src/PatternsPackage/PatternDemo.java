@@ -20,6 +20,15 @@ public class PatternDemo {
 		}
 	}
 	
+	private static void p6(int num) {
+		for (int i=0; i<num; i++) {
+			for (int j=0; j<num-i; j++) {
+				System.out.print((j+1)+" ");
+			}
+			System.out.println('\n');
+		}
+	}
+	
 	
 	
 	public static void main(String[] args) {
@@ -29,7 +38,8 @@ public class PatternDemo {
 //		new Pattern2().drawPattern(7);
 //		new Pattern3().drawPattern(8);
 //		p4(5);
-		p5(5);
+//		p5(5);
+		p6(5);
 	}
 
 }
